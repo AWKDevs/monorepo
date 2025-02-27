@@ -1,0 +1,6 @@
+[submodule "apps/coffe-shop"]
+	path = apps/coffe-shop
+	url = git@github.com:AWKDevs/coffe-shop.git
+[submodule "apps/Landing-AWKDEV"]
+	path = apps/Landing-AWKDEV
+	url = git@github.com:AWKDevs/Landing-AWKDEV.git

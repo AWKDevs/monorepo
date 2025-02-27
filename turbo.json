@@ -1,17 +1,25 @@
 {
-    "tasks": {
-      "build": {
-        "dependsOn": ["^build"],
-        "outputs": ["dist/**"]
-      },
-      "dev": {
-        "cache": false
-      },
-      "lint": {
-        "outputs": []
-      },
-      "test": {
-        "outputs": []
-      }
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**"]
+    },
+    "dev": {
+      "cache": false,
+      "dependsOn": ["^dev"],
+	  "inputs": ["src/**", "next.config.js", "package.json"],
+      "outputs": []
+    },
+    "start": {
+      "dependsOn": ["build"],
+      "outputs": []
+    },
+    "lint": {
+      "outputs": []
+    },
+    "test": {
+      "outputs": []
     }
   }
+}
+
