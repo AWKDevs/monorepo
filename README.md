@@ -9,7 +9,7 @@
 $ git clone git@github.com:AWKDevs/monorepo.git
 $ npm install 
 ```
-The sentence will install all dependencies inside of each SPA as well as the ones needed for the monorepository. 	*** (If it fails go inside each SPA folder and install the dependencies 😅) ***
+The sentence will install all dependencies inside of each SPA as well as the ones needed for the monorepository. 	**(If it fails go inside each SPA folder and install the dependencies 😅)**
 ## Launch all apps in parallel
 
 ```
