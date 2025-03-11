@@ -31,7 +31,7 @@ Most important settings for the project are stored in:
     👉🏽 Script orquestation and general monorepo settings as well as workspaces.
 
 ./turbo.json
-    👉🏽 Scripts for detect workspaces and dependencies for all apps in ./apps/ 
+    👉🏽 Configuration that lets Turbopack "keep an eye" on the script's SPA executions coming from for detect workspaces and dependencies for all apps in ./apps/ 
 ```
 ## How to build & deploy? 
 Lorem ipsum ...

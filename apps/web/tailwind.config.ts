@@ -18,9 +18,16 @@ export default {
         ]
       },
       screens: {
-        pre_md: '1080px',
+		sm: '640px',
+		md: '768px',
+    	lg: '1024px',
+    	xl: '1280px'
       },
       colors: {
+        'custom-light': '#F8F3D9',
+        'custom-light-secondary': '#EBE5C2',
+        'custom-dark': '#B9B28A',
+        'custom-dark-secondary': '#504B38',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
