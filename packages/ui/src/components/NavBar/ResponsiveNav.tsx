@@ -9,10 +9,11 @@ const ResponsiveNav = () => {
   const logo = (
     <Link href="/" className="flex items-center space-x-2">
       <SiCoffeescript className="h-6 w-6 text-custom-light" />
-      <span className="font-bold text-xl text-custom-light">Coffee Shop</span>
+      <span className="font-bold text-xl text-custom-light">Monorepo app</span>
     </Link>
   );
 
+	{/* TODO: centralize buttons text in metadata bank. */}
   const menuDesktop = (
     <>
       <HeaderIconButton href="/cart" icon={<BiSolidCart />} color="custom-light" />
@@ -25,6 +26,7 @@ const ResponsiveNav = () => {
     </>
   );
 
+	{/* TODO: centralize buttons text in metadata bank. */}
   const menuMobile = (
     <>
       <HeaderButtonBronwBorder href="/cart" icon={<BiSolidCart />} insideText="Carrito" color="custom-light" mobile />

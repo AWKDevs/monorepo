@@ -2,9 +2,10 @@ import React from "react";
 import ResponsiveNav from "./NavBar/ResponsiveNav";
 import { Metadata } from "next";
 
+// TODO: crentralize metadata
 export const metadata: Metadata = {
-  title: 'Coffee Shop',
-  description: 'Dulces Recuerdos Café - 10 años creando momentos mágicos.'
+  title: 'Monorepo pick & play',
+  description: 'Here we can pick and play with our custom components'
 };
 
 const Header = () => {
