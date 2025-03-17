@@ -17,11 +17,11 @@ const ResponsiveNavClient = ({ menuDesktop, menuMobile, logo }: ResponsiveNavCli
   return (
     <nav className="border-b w-full">
       <div className="w-full px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 w-full">
           {logo}
 
           {/* Menú Desktop */}
-          <div className="pre_md:hidden flex items-center space-x-4">
+          <div className="pre_md:hidden flex items-center space-x-4 ml-auto">
             {menuDesktop}
           </div>
 

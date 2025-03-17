@@ -8,7 +8,7 @@ type HeaderButtonProps = {
   mobile?: boolean;
 };
 
-const HeaderButtonBronwBorder: React.FC<HeaderButtonProps> = ({ href, insideText, icon, mobile }) => {
+const HeaderButtonBrownBorder: React.FC<HeaderButtonProps> = ({ href, insideText, icon, mobile }) => {
   return (
     <Link
       href={href}
@@ -40,4 +40,4 @@ const HeaderIconButton: React.FC<HeaderButtonProps> = ({ href, icon, color, mobi
   );
 };
 
-export { HeaderButtonBronwBorder, HeaderIconButton };
+export { HeaderButtonBrownBorder, HeaderIconButton };
