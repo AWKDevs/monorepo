@@ -1,3 +1,4 @@
+import baseConfig from "../../tailwind.config";
 import type { Config } from "tailwindcss";
 import * as tailwindcssMotion from 'tailwindcss-motion';
 

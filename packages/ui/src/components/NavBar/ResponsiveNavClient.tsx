@@ -15,47 +15,29 @@ const ResponsiveNavClient = ({ menuDesktop, menuMobile, logo }: ResponsiveNavCli
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="border-b w-full">
-      <div className="w-full px-8">
-        <div className="flex justify-between items-center h-16 w-full">
-          {logo}
+    <nav className="w-full border-b bg-white">
+      <div className="w-full flex items-center justify-between px-8 h-16 border-2 border-red-500">
+        {/* Logo a la izquierda */}
+        <div className="flex-shrink-0 border-2 border-green-500">{logo}</div>
 
-          {/* Menú Desktop */}
-          <div className="pre_md:hidden flex items-center space-x-4 ml-auto">
-            {menuDesktop}
-          </div>
+        {/* Menú Desktop alineado a la derecha */}
+        <div className="hidden pre_md:flex ml-auto border-2 border-blue-500">{menuDesktop}</div>
 
-          {/* Botón Hamburguesa */}
-          <button
-            onClick={toggleMenu}
-            className="hidden pre_md:flex p-2 rounded-md text-[rgb(249,217,120)] hover:bg-[rgb(180,135,100)] focus:outline-none transition-colors duration-200"
-            aria-label="Toggle menu"
-          >
-            {isOpen ? (
-              <BiX className="h-6 w-6 hover:transition-transform duration-300 hover:rotate-180" />
-            ) : (
-              <BiMenu className="h-6 w-6 hover:transition-transform duration-50 hover:animate-pulse" />
-            )}
-          </button>
-        </div>
-
-        {/* Menú Móvil */}
-        <div
-          className={`hidden pre_md:flex absolute left-0 w-full bg-[rgb(201,186,175)] z-50 shadow-lg
-            ${isOpen ? 'motion-preset-slide-left scale-y-100 opacity-100' : 'scale-y-0 opacity-0'}`}
-          style={{
-            maxHeight: isOpen ? '1000px' : '0px',
-            transformOrigin: 'top',
-            overflow: 'hidden'
-          }}
+        {/* Botón de menú móvil */}
+        <button
+          onClick={toggleMenu}
+          className="pre_md:hidden p-2 rounded-md text-[rgb(249,217,120)] hover:bg-[rgb(180,135,100)] focus:outline-none transition-colors duration-200"
+          aria-label="Toggle menu"
         >
-          <div className="px-32 py-4 space-y-4">
-            {menuMobile}
-          </div>
-        </div>
+          {isOpen ? (
+            <BiX className="h-6 w-6 hover:transition-transform duration-300 hover:rotate-180" />
+          ) : (
+            <BiMenu className="h-6 w-6 hover:transition-transform duration-50 hover:animate-pulse" />
+          )}
+        </button>
       </div>
     </nav>
   );
 };
-
+ 
 export default ResponsiveNavClient;

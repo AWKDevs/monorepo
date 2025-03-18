@@ -15,7 +15,7 @@ const ResponsiveNav = () => {
 
 	{/* TODO: centralize buttons text in metadata bank. */}
   const menuDesktop = (
-    <>
+    <div className="flex items-center space-x-4 ml-auto">
       <HeaderIconButton href="/cart" icon={<BiSolidCart />} color="custom-light" />
       <HeaderButtonBrownBorder href="/menu" insideText="MENÚ" />
       <HeaderButtonBrownBorder href="/recommendations" insideText="RECOMENDACIONES" />
@@ -23,12 +23,11 @@ const ResponsiveNav = () => {
       <HeaderButtonBrownBorder href="/new" insideText="LO NUEVO" />
       <HeaderButtonBrownBorder href="/about" insideText="NOSOTROS" />
       <HeaderButtonBrownBorder href="/contact" insideText="CONTÁCTANOS" />
-    </>
+    </div>
   );
 
-	{/* TODO: centralize buttons text in metadata bank. */}
-  const menuMobile = (
-    <>
+	{/* TODO: centralize buttons text in metadata bank. */} const menuMobile = (
+    <div>
       <HeaderButtonBrownBorder href="/cart" icon={<BiSolidCart />} insideText="Carrito" color="custom-light" mobile />
       <HeaderButtonBrownBorder href="/menu" insideText="MENÚ" mobile />
       <HeaderButtonBrownBorder href="/recommendations" insideText="RECOMENDACIONES" mobile />
@@ -36,7 +35,7 @@ const ResponsiveNav = () => {
       <HeaderButtonBrownBorder href="/new" insideText="LO NUEVO" mobile />
       <HeaderButtonBrownBorder href="/about" insideText="NOSOTROS" mobile />
       <HeaderButtonBrownBorder href="/contact" insideText="CONTÁCTANOS" mobile />
-    </>
+    </div>
   );
 
   return <ResponsiveNavClient logo={logo} menuDesktop={menuDesktop} menuMobile={menuMobile} />;
