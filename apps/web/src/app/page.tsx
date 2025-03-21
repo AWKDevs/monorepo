@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { LoadingSpin } from "@monorepo/ui";
 
 export default function Home() {
   return (
@@ -12,16 +13,11 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] text-custom-dark-secondary">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-custom-light-secondary px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+
+		<div className="min-h-screen flex flex-col justify-center items-center">
+		  <h1 className="text-2xl font-bold mb-4">Cargando...</h1>
+			<LoadingSpin/>
+		</div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
