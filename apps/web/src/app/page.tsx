@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { LoadingSpin } from "@monorepo/ui";
+import { Toast } from "@monorepo/ui";
 
 export default function Home() {
   return (
@@ -11,6 +12,11 @@ export default function Home() {
 		<div className="min-h-screen flex flex-col justify-center items-center">
 		  <h1 className="text-2xl font-bold mb-4">Cargando...</h1>
 			<LoadingSpin/>
+		</div>
+
+		<div className="min-h-screen flex flex-col justify-center items-center">
+		  <h1 className="text-2xl font-bold mb-4">Toast</h1>
+			<Toast/>
 		</div>
 
     </div>
