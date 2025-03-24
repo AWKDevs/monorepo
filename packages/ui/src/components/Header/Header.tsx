@@ -1,9 +1,9 @@
 import React from "react";
-import ResponsiveNav from "./NavBar/ResponsiveNav";
+import ResponsiveNav from "../NavBar/ResponsiveNav";
 import { Metadata } from "next";
 
 // TODO: crentralize metadata
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: 'Monorepo pick & play',
   description: 'Here we can pick and play with our custom components'
 };

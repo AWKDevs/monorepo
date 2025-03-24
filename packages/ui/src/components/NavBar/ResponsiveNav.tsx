@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { SiCoffeescript } from 'react-icons/si';
 import { BiSolidCart } from 'react-icons/bi';
 import ResponsiveNavClient from './ResponsiveNavClient';
-import { HeaderButtonBrownBorder, HeaderIconButton } from '../HeaderButtons';
+import { HeaderButtonBrownBorder, HeaderIconButton } from '../Header/HeaderButtons';
 import React from 'react';
 
 const ResponsiveNav = () => {
