@@ -3,9 +3,10 @@
 :root {
   --background: #09122C;
   --foreground: #171717;
-  --custom-light: #F8F3D9;
+  --foreground-dark: #504B38;
+  --custom-light: #EFEFEF;
   --custom-light-secondary: #EBE5C2;
-  --custom-dark: #B9B28A;
+  --custom-dark: #09122C;
   --custom-dark-secondary: #504B38;
 }
 
@@ -17,8 +18,8 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--custom-dark);
+  background: var(--custom-light);
   font-family: Arial, Helvetica, sans-serif;
 }
 
