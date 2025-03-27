@@ -60,7 +60,7 @@ const App: React.FC = () => {
     setCurrent(e.key);
   };
 
-  return <Menu theme="dark" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} className="text-lg" />;
+  return <Menu theme="dark" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
 };
 
 export default App;

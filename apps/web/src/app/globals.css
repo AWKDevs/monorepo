@@ -23,60 +23,31 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Centrado y consistencia en el diseño */
-.feature-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 16px;
-    justify-content: center;
-    margin: 20px 0;
+/**
+ * Ant overwrites for form with dark background 
+ */
+.ant-menu-title-content {
+  @apply text-xl;
 }
 
-.feature-card {
-    position: relative; /* Necesario para que Image con fill funcione */
-    text-align: center;
-    border-radius: 10px;
-    overflow: hidden;
-    max-width: 280px;
-    width: 100%; /* Asegurar que las tarjetas usen todo el ancho disponible */
-    margin: 0 auto;
-    height: 300px; /* Definir altura fija */
+.ant-menu-item-icon {
+  @apply text-xl; 
 }
 
-.feature-card img {
-    width: 100% !important;
-    height: 100% !important;
+.ant-form-item-label > label {
+  color: var(--custom-light) !important ;
 }
 
-/* Botón dentro de las imágenes */
-.feature-card button {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
+.ant-checkbox-label {
+  color: var(--custom-light) !important ;
 }
 
-.feature-button {
-    font-family: 'Judson', serif !important;
-    color: #fff !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-    justify-content: center !important;
+.ant-radio-label {
+  color: var(--custom-light) !important ;
 }
 
-.product-description h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+.ant-upload {
+  color: var(--custom-light) !important ;
 }
 
-.product-description p {
-    margin-bottom: 10px;
-}
 
-/* Asegurar consistencia en títulos */
-h2 {
-    font-size: 2rem !important;
-    margin-bottom: 20px !important;
-}
