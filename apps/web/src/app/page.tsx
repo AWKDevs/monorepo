@@ -8,7 +8,7 @@ export default function Home() {
 			<h1 className="text-4xl font-bold text-center">AWKDevs</h1>
 		</div>
 
-    <div className="grid grid-rows-1 grid-cols-3 gap-4 items-center justify-items-center min-h-screen sm:p-20 bg-custom-dark">
+    <div className="grid grid-rows-1 grid-cols-3 gap-4 items-center justify-items-center min-h-screen sm:p-20 ">
 
 		<div className="min-h-screen flex flex-col justify-center items-center bg-(--custom-dark) text-(--custom-light) p-8">
 		  <h1 className="text-2xl font-bold mb-4">Cargando...</h1>

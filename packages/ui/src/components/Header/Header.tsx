@@ -5,27 +5,6 @@ import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/ico
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 
-{/*
-import React from "react";
-import ResponsiveNav from "../NavBar/ResponsiveNav";
-import { Metadata } from "next";
-
-// TODO: crentralize metadata
-const metadata: Metadata = {
-  title: 'Monorepo pick & play',
-  description: 'Here we can pick and play with our custom components'
-};
-
-const Header = () => {
-  return (
-    <header className="top-0 z-50 bg-custom-dark-secondary shadow-md">
-      <ResponsiveNav />
-    </header>
-  );
-};
-*/}
-
-
 type MenuItem = Required<MenuProps>['items'][number];
 
 const items: MenuItem[] = [
@@ -81,7 +60,7 @@ const App: React.FC = () => {
     setCurrent(e.key);
   };
 
-  return <Menu theme="dark" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
+  return <Menu theme="dark" onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} className="text-lg" />;
 };
 
 export default App;
